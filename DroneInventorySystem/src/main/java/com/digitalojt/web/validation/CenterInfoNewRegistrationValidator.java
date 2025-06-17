@@ -10,15 +10,15 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * 操作履歴画面のバリデーションチェック インターフェース
+ * 在庫センター情報登録のバリデーションチェック インターフェース
  *
  * @author dotlife
  */
-@Constraint(validatedBy = OperationLogFormValidatorImpl.class)
+@Constraint(validatedBy = CenterInfoNewRegistrationValidatorImpl.class)
 @Target({ ElementType.TYPE })
 @Retention(RetentionPolicy.RUNTIME)
 @ReportAsSingleViolation
-public @interface OperationLogFormValidator {
+public @interface CenterInfoNewRegistrationValidator {
 	String message() default ErrorMessage.ALL_FIELDS_EMPTY_ERROR_MESSAGE;
 
 	Class<?>[] groups() default {};

@@ -8,6 +8,7 @@ import java.util.stream.Collectors;
  * 画面名Enum
  *
  * @author dotlife
+ *
  */
 public enum ScreenTitle {
 	LOGIN("login.title", "ログイン画面"),

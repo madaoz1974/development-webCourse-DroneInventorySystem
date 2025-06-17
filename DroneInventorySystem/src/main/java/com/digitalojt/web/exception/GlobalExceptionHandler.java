@@ -20,11 +20,6 @@ public class GlobalExceptionHandler {
 		RedirectAttributes redirectAttributes,
 		HttpServletRequest request
 	) {
-		return handleException(ex, redirectAttributes, request);
-	}
-
-	/** 共通のエラーハンドリング */
-	private String handleException(Exception ex, RedirectAttributes redirectAttributes, HttpServletRequest request) {
 		String errorMessage = ex.getMessage();
 		redirectAttributes.addFlashAttribute(LogMessage.FLASH_ATTRIBUTE_ERROR, errorMessage);
 

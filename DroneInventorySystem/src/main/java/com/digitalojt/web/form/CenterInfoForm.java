@@ -7,7 +7,7 @@ import jakarta.validation.constraints.Size;
 import lombok.Data;
 
 /**
- * 在庫センター情報画面のフォームクラス
+ * 在庫センター情報画面のフォームクラス.
  *
  * @author dotlife
  */
@@ -15,26 +15,29 @@ import lombok.Data;
 @CenterInfoFormValidator
 public class CenterInfoForm {
 
-	/** センター名 */
+	/** センター名. */
 	@Size(max = ModelAttributeContents.MAX_CENTER_NAME_LENGTH, message = "{centerName.length.wrongInput}")
 	private String centerName;
 
-	/** 都道府県 */
+	/** 都道府県. */
 	private String region;
 
-	/** 容量(From) */
+	/**
+	 * 容量(From).
+	 */
 	private Integer storageCapacityFrom;
 
-	/** 容量(To) */
+	/**
+	 * 容量(To).
+	 */
 	private Integer storageCapacityTo;
 
 	/**
-	 * 容量(From)のデフォルト値を設定
-	 *
-	 * @return
+	 * 容量(From)のデフォルト値を設定.
+	 * @return デフォルト値が設定された容量(From)
 	 */
 	@PostConstruct
-	public Integer init() {
+	public Integer inittialCapacityFrom() {
 		if (storageCapacityTo != null && storageCapacityFrom == null) {
 			return ModelAttributeContents.INITIAL_CAPACITY_FROM;
 		}

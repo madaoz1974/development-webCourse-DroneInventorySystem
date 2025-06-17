@@ -4,6 +4,7 @@ package com.digitalojt.web.consts;
  * URL定数クラス
  *
  * @author dotlife
+ *
  */
 public class UrlConsts {
 
@@ -36,6 +37,12 @@ public class UrlConsts {
 
 	// 在庫センター情報画面 検索
 	public static final String CENTER_INFO_SEARCH = "/admin/centerInfo/search";
+
+	// 在庫センター情報画面 新規登録初期画面
+	public static final String CENTER_INFO_NEW_REGISTRATION_INFO = "/admin/centerInfo/centerNewRegistration";
+
+	// 在庫センター情報画面 新規登録実行
+	public static final String CENTER_INFO_NEW_REGISTRATION_EXEC = "/admin/centerInfo/centerNewRegistrationExec";
 
 	// 操作履歴画面
 	public static final String OPERATION_LOG = "/admin/operationLog";

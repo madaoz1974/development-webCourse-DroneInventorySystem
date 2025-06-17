@@ -12,6 +12,12 @@
 
     <!-- ファイル拡張子の確認 -->
     <property name="fileExtensions" value="java, properties, xml"/>
+    
+    <!-- 除外パターン -->
+    <module name="SuppressionFilter">
+        <property name="file" value="checkstyle-suppressions.xml"/>
+        <property name="optional" value="true"/>
+    </module>
 
     <!-- 行長: 80-120文字（厳格） -->
     <module name="LineLength">
