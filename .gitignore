@@ -1,3 +1,6 @@
 /.metadata/
 /.idea/
 /Servers/
+/bin/
+.vscode/settings.json
+logs/*.log
