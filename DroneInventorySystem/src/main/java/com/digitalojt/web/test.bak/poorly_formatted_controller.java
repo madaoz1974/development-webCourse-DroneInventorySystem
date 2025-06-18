@@ -1,4 +1,4 @@
-package com.digitalojt.web.test;
+package com.digitalojt.web.test.bak;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

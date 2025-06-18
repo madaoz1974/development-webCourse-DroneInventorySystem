@@ -1,17 +1,19 @@
 package com.digitalojt.web.validation;
 
-import com.digitalojt.web.consts.ErrorMessage;
-import jakarta.validation.Constraint;
-import jakarta.validation.Payload;
-import jakarta.validation.ReportAsSingleViolation;
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
+import com.digitalojt.web.consts.ErrorMessage;
+
+import jakarta.validation.Constraint;
+import jakarta.validation.Payload;
+import jakarta.validation.ReportAsSingleViolation;
+
 /**
  * 在庫センター情報登録のバリデーションチェック インターフェース
- *
+ * 
  * @author dotlife
  */
 @Constraint(validatedBy = CenterInfoNewRegistrationValidatorImpl.class)
@@ -19,9 +21,8 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 @ReportAsSingleViolation
 public @interface CenterInfoNewRegistrationValidator {
+
 	String message() default ErrorMessage.ALL_FIELDS_EMPTY_ERROR_MESSAGE;
-
-	Class<?>[] groups() default {};
-
-	Class<? extends Payload>[] payload() default {};
+    Class<?>[] groups() default {};
+    Class<? extends Payload>[] payload() default {};
 }

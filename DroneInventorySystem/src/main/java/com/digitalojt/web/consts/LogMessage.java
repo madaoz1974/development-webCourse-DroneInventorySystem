@@ -2,9 +2,9 @@ package com.digitalojt.web.consts;
 
 /**
  * ログメッセージ定数クラス
- *
+ * 
  * @author dotlife
- *
+ * 
  */
 public class LogMessage {
 
@@ -25,12 +25,13 @@ public class LogMessage {
 	//アプリケーションログ
 	//(GETかPOST)-(処理対象の関数名)-(開始か終了)
 	public static final String APP_LOG = "APP: %s - %s - %s";
-
+	
 	public static final String PROCESS_START = "START";
 	public static final String PROCESS_END = "END";
 	public static final String FLASH_ATTRIBUTE_ERROR = "errorMsg";
-
+    
+	
 	//HTTPメソッド
-	public static final String HTTP_GET = "GET";
-	public static final String HTTP_POST = "POST";
+    public static final String HTTP_GET = "GET";
+    public static final String HTTP_POST = "POST";
 }

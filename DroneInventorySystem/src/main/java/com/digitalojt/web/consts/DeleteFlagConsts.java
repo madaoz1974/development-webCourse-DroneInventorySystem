@@ -4,7 +4,7 @@ package com.digitalojt.web.consts;
  * 論理削除フラグ 定数クラス
  *
  * @author dotlife
- *
+ * 
  */
 public class DeleteFlagConsts {
 

@@ -5,7 +5,7 @@ package com.digitalojt.web.consts;
  * 
  * @author dotlife
  */
-public enum InvalidCharacter {
+public enum InputCenterformInvalidCharacter {
 
     CURLY_BRACE_OPEN('{'),
     CURLY_BRACE_CLOSE('}'),
@@ -18,13 +18,11 @@ public enum InvalidCharacter {
     QUESTION_MARK('?'),
     ASTERISK('*'),
     DABLE_COTE('"'),
-    SHINGLE_COTE('\''),
-    ZENBRANK('　'),
-	BRANK(' ');
+    SHINGLE_COTE('\'');
 
     private final char character;
 
-    InvalidCharacter(char character) {
+    InputCenterformInvalidCharacter(char character) {
         this.character = character;
     }
 

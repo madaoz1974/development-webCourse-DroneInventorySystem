@@ -4,7 +4,7 @@ package com.digitalojt.web.consts;
  * URL定数クラス
  *
  * @author dotlife
- *
+ * 
  */
 public class UrlConsts {
 
@@ -16,10 +16,10 @@ public class UrlConsts {
 
 	// エラー
 	public static final String ERROR = "/error";
-
+	
 	// 認証
 	public static final String AUTHENTICATE = "/authenticate";
-
+	
 	// 在庫一覧画面
 	public static final String STOCK_LIST = "/admin/stockList";
 
@@ -28,34 +28,35 @@ public class UrlConsts {
 
 	// 在庫一覧画面 検索
 	public static final String STOCK_LIST_SEARCH = "/admin/stockList/search";
-
+	
 	// 在庫センター情報画面
-	public static final String CENTER_INFO = "/admin/centerInfo";
+	public static final String  CENTER_INFO = "/admin/centerInfo";
 
 	// 在庫センター情報画面初期表示
-	public static final String CENTER_INFO_INDEX = "/admin/centerInfo/centerinfo";
-
+	public static final String  CENTER_INFO_INDEX = "/admin/centerInfo/centerinfo";
+	
 	// 在庫センター情報画面 検索
 	public static final String CENTER_INFO_SEARCH = "/admin/centerInfo/search";
-
+	
 	// 在庫センター情報画面 新規登録初期画面
 	public static final String CENTER_INFO_NEW_REGISTRATION_INFO = "/admin/centerInfo/centerNewRegistration";
-
+	
 	// 在庫センター情報画面 新規登録実行
 	public static final String CENTER_INFO_NEW_REGISTRATION_EXEC = "/admin/centerInfo/centerNewRegistrationExec";
-
+	
 	// 操作履歴画面
-	public static final String OPERATION_LOG = "/admin/operationLog";
+	public static final String  OPERATION_LOG = "/admin/operationLog";
 
 	// 操作履歴画面初期画面
-	public static final String OPERATION_LOG_INDEX = "admin/operationLog/operationlog";
+	public static final String  OPERATION_LOG_INDEX = "admin/operationLog/operationlog";
 
 	// 操作履歴画面 検索
-	public static final String OPERATION_LOG_SEARCH = "/admin/operationLog/search";
-
+	public static final String  OPERATION_LOG_SEARCH = "/admin/operationLog/search";
+	
 	// 認証不要画面
-	public static final String[] NO_AUTHENTICATION = { LOGIN, AUTHENTICATE };
-
+	public static final String[] NO_AUTHENTICATION = {LOGIN, AUTHENTICATE};
+	
 	// エラー
-	public static final String ERROR_VIEW = "error/error";
+	public static final String  ERROR_VIEW = "error/error";
+
 }

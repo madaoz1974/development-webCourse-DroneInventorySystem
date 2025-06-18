@@ -83,7 +83,7 @@ public class staticanalysis_violation_example {
 	// デッドコード: 違反
 	private void deadCode() {
 		return;
-		System.out.println("This will never execute"); // unreachable code
+		//System.out.println("This will never execute"); // unreachable code
 	}
 
 	// 長すぎるメソッド（30行超過）: 違反
